@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="Temp_Cnvrtr.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Temperature Converter</h1>
+    <div class="Ip_Grp">
+      <label for="temperature">Enter Temperature:</label>
+      <input type="number" id="temperature" placeholder="e.g., 100">
+    </div>
+    <div class="Ip_Grp">
+      <label for="from-unit">From:</label>
+      <select id="from-unit">
+        <option value="celsius">Celsius (°C)</option>
+        <option value="fahrenheit">Fahrenheit (°F)</option>
+        <option value="kelvin">Kelvin (K)</option>
+      </select>
+    </div>
+    <div class="Ip_Grp">
+      <label for="to-unit">To:</label>
+      <select id="to-unit">
+        <option value="celsius">Celsius (°C)</option>
+        <option value="fahrenheit">Fahrenheit (°F)</option>
+        <option value="kelvin">Kelvin (K)</option>
+      </select>
+    </div>
+    <button id="convert-btn">Convert</button>
+    <div class="result">
+      <h2>Result:</h2>
+      <p id="cnvrtd_temp">-</p>
+    </div>
+  </div>
+  <script src="Temp_Cnvrtr.js"></script>
+</body>
+</html>
